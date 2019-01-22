@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/master.css">
+<section class="my_profile_section">
+  <h3>My Profile</h3>
+  <div>
+		<h1><%= @user.username %></h1>
+  </div>
+
+</section>
+
+<section class="my_meme_section">
+  <h3>My Memes</h3>
+  <div>
+		<% @user.memes.each do |meme| %>
+		<div class="meme_post">
+			<%= meme.title %>
+			<%= meme.caption %>
+		</div>
+		<% end %>
+  </div>
+</section>
+
+
+<section class="my_fav_section">
+  <h3>Favorite Memes</h3>
+  <div>
+
+  </div>
+
+</section>
