@@ -6,6 +6,9 @@ class MemesController < ApplicationController
     @memes = Meme.all
   end
 
+	def show
+		
+	end
 
   def set_meme
     @meme = Meme.find(params[:id])
