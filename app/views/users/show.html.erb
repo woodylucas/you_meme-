@@ -7,9 +7,12 @@
 					<img src="<%= asset_path('empty_profile_pic.jpg') %>" alt="">
 				</div>
 		</div>
-		<h1><%= @user.username %></h1>
-		<p><%= @user.bio %></p>
-		<p>Applauds: <%= @user.total_applauds %></p>
+		<div class="profile_info">
+			<h1><%= @user.username %></h1>
+			<p><%= @user.bio %></p>
+			<p>Applauds: <%= @user.total_applauds %></p>
+		</div>
+
   </div>
 
 </section>
@@ -20,8 +23,11 @@
 		<% @user.memes.each do |meme| %>
 		<div class="meme_post">
 			<%= image_tag meme.cover_photo %>
-			<%= meme.title %>
-			<%= meme.caption %>
+			<h2><%= meme.title %></h2>
+			<h6><%= meme.created_at.strftime("Posted %m/%d/%Y") %></h6>
+			<p><%= meme.caption %></p>
+			<button type="button" name="edit"><%= link_to "Edit", edit_meme_path(meme) %></button>
+			<!-- <button type="button" name="delete"><%# link_to "Delete", meme_path(meme.user_id), method: :delete %></button> -->
 		</div>
 		<% end %>
   </div>
