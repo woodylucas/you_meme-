@@ -27,7 +27,7 @@
 			<h6><%= meme.created_at.strftime("Posted %m/%d/%Y") %></h6>
 			<p><%= meme.caption %></p>
 			<button type="button" name="edit"><%= link_to "Edit", edit_meme_path(meme) %></button>
-			<!-- <button type="button" name="delete"><%# link_to "Delete", meme_path(meme.user_id), method: :delete %></button> -->
+			<button id="meme_delete" type="button" name="delete"><%= link_to "Delete", meme_path(meme), method: :delete %></button>
 		</div>
 		<% end %>
   </div>
