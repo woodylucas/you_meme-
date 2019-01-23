@@ -1,15 +1,16 @@
 <link rel="stylesheet" href="/css/master.css">
 <section class="my_profile_section">
   <h3>My Profile</h3>
-  <div>
+  <div class="container">
 		<h1><%= @user.username %></h1>
+		<p><%= @user.username %></p>
   </div>
 
 </section>
 
 <section class="my_meme_section">
   <h3>My Memes</h3>
-  <div>
+  <div class="container">
 		<% @user.memes.each do |meme| %>
 		<div class="meme_post">
 			<%= meme.title %>
@@ -22,8 +23,8 @@
 
 <section class="my_fav_section">
   <h3>Favorite Memes</h3>
-  <div>
-
+  <div class="container">
+		Hello
   </div>
 
 </section>

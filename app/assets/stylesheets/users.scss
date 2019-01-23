@@ -1,8 +1,50 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: rgb(28,89,113);
+}
+
+/*** SECTIONS ***/
+
+h3 {
+	color: rgba(255,255,255,.7);
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	padding-left: 10px;
+}
+
 .my_profile_section, .my_meme_section, .my_fav_section {
 	float: left;
-	width: 33%;
-
+	margin: 1%;
+	font-family: 'Roboto', sans-serif;
 }
+
+.my_profile_section {
+	width: 24%;
+}
+
+.my_meme_section {
+	width: 46%;
+}
+
+.my_fav_section {
+	width: 24%;
+}
+
+.container {
+	border-radius: 6px;
+	padding: 10px;
+	color: #f7f7f7;
+}
+
+.my_profile_section .container, .my_fav_section .container {
+	border: 2px solid rgba(255,255,255,.2);
+}
+
+.my_meme_section .container {
+	background-color: rgba(255,255,255,.2);
+}
+/*** END SECTIONS ***/
