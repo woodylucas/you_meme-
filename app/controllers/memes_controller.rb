@@ -1,6 +1,6 @@
 class MemesController < ApplicationController
 
-  before_action :set_meme, only: %i[show]
+  before_action :set_meme, only: %i[show edit update delete]
 
   def index
     @memes = Meme.all
@@ -16,6 +16,22 @@ class MemesController < ApplicationController
 
   def create
     @meme = Meme.create(meme_params)
+    redirect_to meme_path(@meme)
+  end
+
+
+  def edit
+  end
+
+
+  def update
+    @meme.update(meme_params)
+    redirect_to meme_path(@meme)
+  end
+
+
+  def delete
+    @meme.destroy
     redirect_to meme_path(@meme)
   end
 
