@@ -8,8 +8,7 @@
 	<br><br>
 	<%= f.label :cover_photo %>
 	<%= f.file_field :cover_photo %>
-	<%= f.label :user_id %>
-	<%= f.text_field :user_id %>
+	<%= f.hidden_field :user_id %>
 	<br><br>
 	<%= f.submit %>
 <% end %>
