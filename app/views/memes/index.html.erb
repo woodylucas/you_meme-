@@ -1,26 +1,8 @@
-<%= title "Welcome" %>
+<h1> All Memes</h1>
 
-<section>
-  <h3>My Profile</h3>
-  <div>
-
-  </div>
-
-</section>
-
-<section>
-  <h3>My Memes</h3>
-  <div>
-
-  </div>
-
-</section>
-
-
-<section>
-  <h3>Favorite Memes</h3>
-  <div>
-
-  </div>
-
-</section>
+<ul>
+  <li> <% @memes.each do |meme| %></li>
+  <strong> <%= meme.title %> </strong>
+  <%= meme.created_at.strftime("Printed on %m/%d/%Y") %> <%=  meme.created_at.strftime("at %I:%M%p") %>
+          <% end %>
+</ul>
