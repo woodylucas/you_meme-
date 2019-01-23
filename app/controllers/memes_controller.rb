@@ -6,9 +6,18 @@ class MemesController < ApplicationController
     @memes = Meme.all
   end
 
+  def new
+    @meme = Meme.new
+  end
+
+
 	def show
-		
 	end
+
+  def create
+    @meme = Meme.create(meme_params)
+    redirect_to meme_path(@meme)
+  end
 
   def set_meme
     @meme = Meme.find(params[:id])
@@ -16,6 +25,6 @@ class MemesController < ApplicationController
 
   private
   def meme_params
-    params.require(:meme).permit(:title, :caption)
+    params.require(:meme).permit(:title, :caption, :user_id)
   end
 end
