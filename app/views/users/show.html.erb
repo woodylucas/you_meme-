@@ -2,6 +2,14 @@
 <section class="my_profile_section">
   <h3>My Profile</h3>
   <div class="container">
+		<div class="profile_box">
+			<div>
+				<img src="../assets/images/empty_profile_pic.jpg" alt="">
+			</div>
+			<div>
+
+			</div>
+		</div>
 		<h1><%= @user.username %></h1>
 		<p><%= @user.bio %></p>
 		<p>Applauds: <%= @user.total_applauds %></p>
@@ -14,6 +22,7 @@
   <div class="container">
 		<% @user.memes.each do |meme| %>
 		<div class="meme_post">
+			<%= image_tag meme.cover_photo %>
 			<%= meme.title %>
 			<%= meme.caption %>
 		</div>

@@ -16,6 +16,21 @@ h3 {
 	padding-left: 10px;
 }
 
+/*** USER PROFILE ***/
+.profile_box:first-child {
+	background-image: image-url("empty_profile_pic.jpg");
+
+	border-radius: 100%;
+	float: left;
+}
+
+img {
+	// width: 10px;
+}
+
+
+
+/*** END USER PROFILE ***/
 .my_profile_section, .my_meme_section, .my_fav_section {
 	float: left;
 	margin: 1%;
