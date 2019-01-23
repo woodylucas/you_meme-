@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-	background-color: rgb(28,89,113);
-}
+
 
 /*** SECTIONS ***/
 
@@ -17,20 +15,33 @@ h3 {
 }
 
 /*** USER PROFILE ***/
-.profile_box:first-child {
-	background-image: image-url("empty_profile_pic.jpg");
-
+.profile_img img {
 	border-radius: 100%;
 	float: left;
-}
-
-img {
-	// width: 10px;
+	width: 120px;
+	padding: 10px;
+	display: block;
 }
 
 
 
 /*** END USER PROFILE ***/
+
+.meme_post {
+	height: 130px;
+	padding: 10px;
+	border-bottom: .5px solid rgba(28,89,113,.5);
+}
+
+.meme_post:last-of-type {
+	border-bottom: .5px solid rgba(28,89,113,0);
+}
+
+.meme_post img {
+	width: 200px;
+	height: auto;
+}
+
 .my_profile_section, .my_meme_section, .my_fav_section {
 	float: left;
 	margin: 1%;

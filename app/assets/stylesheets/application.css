@@ -18,9 +18,13 @@
  	margin: 0;
  }
 
+
+
+
 body {
 	padding: 0;
 	margin: 0;
+	background-color: rgb(28,89,113);
 }
 header {
 	background-color: #fff;

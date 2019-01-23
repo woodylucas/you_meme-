@@ -3,12 +3,9 @@
   <h3>My Profile</h3>
   <div class="container">
 		<div class="profile_box">
-			<div>
-				<img src="../assets/images/empty_profile_pic.jpg" alt="">
-			</div>
-			<div>
-
-			</div>
+				<div class="profile_img">
+					<img src="<%= asset_path('empty_profile_pic.jpg') %>" alt="">
+				</div>
 		</div>
 		<h1><%= @user.username %></h1>
 		<p><%= @user.bio %></p>
