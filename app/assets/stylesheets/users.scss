@@ -15,15 +15,33 @@ h3 {
 }
 
 /*** USER PROFILE ***/
-.profile_img img {
-	border-radius: 100%;
-	float: left;
-	width: 120px;
-	padding: 10px;
+
+.profile_box {
+	margin: auto;
 	display: block;
+	text-align: center;
 }
 
+.profile_img img {
+	border-radius: 100%;
+	width: 130px;
+	padding-top: 10px;
+}
 
+.profile_info {
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.profile_info h1 {
+	font-size: 1.35em;
+}
+
+.profile_info p {
+	font-size: .95em;
+	font-weight: 100;
+}
 
 /*** END USER PROFILE ***/
 
@@ -40,6 +58,26 @@ h3 {
 .meme_post img {
 	width: 200px;
 	height: auto;
+	float: left;
+	padding-right: 20px;
+}
+
+.meme_post p {
+	position: relative;
+	width: 200px;
+	text-align: center;
+	font-weight: 900;
+	top: -30px;
+	font-weight: bold;
+}
+
+.meme_post h2 {
+	font-size: 1.1em;
+}
+
+.meme_post button {
+	float:right;
+	margin-top: -60px;
 }
 
 .my_profile_section, .my_meme_section, .my_fav_section {
