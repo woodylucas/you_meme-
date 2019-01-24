@@ -16,7 +16,7 @@ class MemesController < ApplicationController
 
   def create
     @meme = Meme.create(meme_params)
-    redirect_to meme_path(@meme)
+    redirect_to user_path(@meme.user)
   end
 
 
@@ -27,7 +27,7 @@ class MemesController < ApplicationController
 
   def update
     @meme.update(meme_params)
-    redirect_to meme_path(@meme)
+    redirect_to user_path(@meme.user)
   end
 
 
