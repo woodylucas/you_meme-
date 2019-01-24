@@ -9,7 +9,7 @@ Meme.destroy_all
 Like.destroy_all
 User.destroy_all
 
-u1 = User.create(username: "Donald J. Trump", encrypted_password: "MAGA", bio: "I am Donald Trump, the greatest ever.")
+u1 = User.create(username: "Donald J. Trump", password_digest: "MAGA", bio: "I am Donald Trump, the greatest ever.")
 
 m1 = Meme.create(title: "The Most Interesting Man", caption: "Stay thirsty my friends", user_id: u1.id)
 
