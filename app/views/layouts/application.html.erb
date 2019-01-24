@@ -8,7 +8,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
   </head>
+
+
 
   <body>
 		<header>
@@ -19,6 +22,15 @@
 				</div>
 			</div>
 		</header>
+		
+    <% if logged_in? %>
+  <nav>
+    <%= form_tag "/logout", method: :delete do %>
+    <%= submit_tag "Log Out" %>
+    <% end %>
+  </nav>
+    <% end %>
+
     <%= yield %>
   </body>
-</html>
+  </html>
