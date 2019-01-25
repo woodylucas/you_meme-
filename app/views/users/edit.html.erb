@@ -1,0 +1,20 @@
+<div class="wrapper">
+<h3>Edit Your Profile</h3>
+<div class="login_form">
+<%= form_for @user do |f| %>
+	<p>
+  <%= f.label "Change Your Profile Pic" %>
+  <%= f.file_field :profile_pic %>
+	</p>
+	<p>
+  <%= f.label "Username" %>
+  <%= f.text_field :username %>
+	</p>
+	<p>
+  <%= f.label "Bio" %>
+  <%= f.text_field :bio %>
+	</p>
+  <%= f.submit %>
+<% end %>
+</div>
+</div>

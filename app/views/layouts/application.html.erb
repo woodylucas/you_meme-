@@ -16,8 +16,9 @@
   <body>
 		<header>
 			<div class="logo">
+				<img src="<%= asset_path('logo_header.png') %>" alt="">
 				<div class="logger">
-					<p>Log Out</p>
+					<p><img src="<%= asset_path('icon_1.png') %>" alt=""></p>
 				</div>
 			</div>
 		</header>
@@ -25,7 +26,7 @@
     <% if logged_in? %>
   <nav>
     <%= form_tag "/logout", method: :delete do %>
-    <%= submit_tag "Log Out" %>
+    <p><%= submit_tag "Log Out" %></p>
     <% end %>
   </nav>
     <% end %>
