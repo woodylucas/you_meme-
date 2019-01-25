@@ -12,6 +12,7 @@ class MemesController < ApplicationController
 
 
 	def show
+    @number_of_likes = @meme.likes.count
 	end
 
   def create

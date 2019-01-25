@@ -6,8 +6,9 @@ class LikesController < ApplicationController
   end
 
   def create
-    byebug
+
     @meme.likes.build(user_id: current_user.id)
+    redirect_to memes_path(@meme)
   end
 
 

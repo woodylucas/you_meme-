@@ -4,7 +4,4 @@ class User < ApplicationRecord
 	has_one_attached :profile_pic
   has_secure_password
 
-  def total_applauds
-    self.likes.count
-  end
 end
